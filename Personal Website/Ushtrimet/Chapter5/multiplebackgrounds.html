@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<!-- Fig.5.8: multiplebackgrounds.html -->
+<!-- Multiple background images in CSS3. -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Multiple Backgrounds</title>
+        <style type = "text/css">
+            div.background{
+                background-image: url(logo.jfif), url(oceann.jfif);
+                background-position: bottom right, 100% center;
+                background-origin: border-box, content-box;
+                background-repeat: no-repeat, repeat;
+            }
+            div.content{
+                padding: 10px 15px;
+                color: white;
+                font-size: 150%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="background">
+            <div class="content">
+                <p>
+                    Deitel & Associates, Inc. is an internationally recognized
+                    authoring and corporate training organization. The company specializing 
+                    in programming languages,Internet/web thechnology, iPhone and Android
+                    app development and object thechnology eduaction. The company provides
+                    courses on Java <sup>&reg;</sup>, C++<sup>&reg;</sup>, C# <sup>&reg;</sup>, 
+                    Visual Basics<sup>&reg;</sup>, C, Python <sup>&reg;</sup>, 
+                    JavaScript Internet and web programming,
+                    Object thechnology and iPhone and Android app development.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
