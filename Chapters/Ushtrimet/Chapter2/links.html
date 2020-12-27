@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<!---Fig. 2.3: links.html------>
+<!---Linking to other web pages.--->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Links</title>
+	</head>
+	
+	<body>
+			<!--Go back Button-->
+    	<button onclick="goBack()">Go Back</button>
+			
+		<h1>Here are my favorite sites:</h1>
+		<p><strong>Click a name to visit that site.</strong></p>
+
+		<!---create four text hyperlinks--->
+		<p><a href="http://www.facebook.com">Facebook</a></p>
+		<p><a href="http://www.twitter.com">Twitter</a></p>
+		<p><a href="http://www.foursquare.com">Foursquare</a></p>
+		<p><a href="http://www.google.com">Google</a></p>		
+        <!--function that make able to go back-->
+		<script>
+			function goBack() {
+			window.history.back();
+			}
+		</script>
+	</body>
+</html>

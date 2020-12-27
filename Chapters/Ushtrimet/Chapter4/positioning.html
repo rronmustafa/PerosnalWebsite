@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!-- Fig. 4.9: positioning.html -->
+<!-- Absolute positioning of elements. -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Absolute Positioning</title>
+        <style type = "text/css">
+            .background_image   {   position: absolute; 
+                                    top: 0px;
+                                    left: 0px;
+                                    z-index: 1; }
+            .foreground_image   {   position: absolute;
+                                    top: 25px;
+                                    left: 100px;
+                                    z-index: 2; }
+            .text               {   position: absolute;
+                                    top: 25px;
+                                    left: 100px;
+                                    z-index: 3;
+                                    font-size: 20pt;
+                                    font-family: Tahoma, geneva, sans-serif; }                                  
+        </style>
+    </head>
+    <body>
+        <!--Go back Button-->
+    <button onclick="goBack()">Go Back</button>
+        <p><img src = "background_image.jfif" class = "background_image"
+            alt = "First positioned image" /></p>
+        <p><img src = "foreground_image.png" class = "foreground_image"
+            alt = "Second positioned image" /></p>
+        <p class = "text">Positioned Text</p>
+
+        <!--function that make able to go back-->
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+
+    
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.9: reflection.html -->
+<!-- Reflection in CSS3. -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reflection</title>
+    <style type = "text/css">
+        img { margin: 10px;}
+        img.below {
+            -webkit-box-reflect: below 5px
+                -webkit-gradient(
+                    linear,left top, left bottom,
+                    from(transparent), to(white)
+                );
+        }
+        img.right{
+            -webkit-box-reflect: right 5px
+                -webkit-gradient(
+                    linear, right top, left top,
+                    from(transparent), to(white)
+                );
+        }
+    </style>
+</head>
+<body>
+        <!--Go back Button-->
+    <button onclick="goBack()">Go Back</button>
+            
+    <img class = "below" src = "jhtp9.jfif" width = "138" height = "180"
+     alt = "Java How to Program book cover">
+     <img class = "right" src = "jhtp9.jfif" width = "138" height = "180"
+     alt = "Java How to Program book cover">
+    
+
+        <!--function that make able to go back-->
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+
+    
+</body>
+</html>

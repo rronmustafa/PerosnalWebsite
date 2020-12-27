@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.10: imageborder.html -->
+<!-- Streching and repeating an image to create a border. -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Image Border</title>
+        <style type = "text/css">
+            div{
+                border-width: 30px;
+                width: 234px;
+                padding: 20px 20px;
+            }
+            #stretch{
+                -webkit-border-image: url(border.jfif) 80 80 80 80 stretch;
+                -moz-border-image: url(border.jfif) 80 80 80 80 stretch;
+                -o-border-image: url(border.jfif) 80 80 80 80 stretch;
+                border-image: url(border.jfif) 80, 80, 80, 80, stretch;
+            }
+            #repeat {
+                -webkit-border-image: url(border.jfif)  34% 34% repeat;
+                -moz-border-image: url(border.jfif) 34% 34% repeat;
+                -o-border-image: url(border.jfif) 34% 34% repeat;
+                border-image: url(border.jfif) 34%, 34%, repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Go back Button-->
+        <button onclick="goBack()">Go Back</button>
+            
+        <h2>Image Borders</h2>
+        <img src = "border.jfif" alt = "image used to demonstrate borders">
+        <p><div id="stretch">Streching the image border</div></p>
+        <p><div id="repeat">Repting the image border</div></p>
+
+        <!--function that make able to go back-->
+        <script>
+            function goBack() {
+            window.history.back();
+            }
+        </script>
+
+    
+    </body>
+</html>

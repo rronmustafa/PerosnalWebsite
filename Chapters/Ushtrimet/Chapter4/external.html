@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!-- Fig. 4.8: external.html -->
+<!-- Linking an external style sheet. -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Linking External Style Sheets</title>
+        <link rel = "stylesheet" type = "text/css"
+             href = "styles.css">
+    </head>
+    <body>
+        <!--Go back Button-->
+    <button onclick="goBack()">Go Back</button>
+        <h1>Shopping list for <em>Monday</em>:</h1>
+    
+        <ul>
+            <li>Milk</li>
+            <li>Bread
+                <ul>
+                    <li>white bread</li>
+                    <li>Rye bread</li>
+                    <li>Whole wheat bread</li>
+                </ul>
+            </li>
+            <li>Carrots</li>
+            <li>Yogurt</li>
+            <li>Pizza <em>with mushrooms</em></li> 
+        </ul>
+
+        <p><em>Go to the</em>
+            <a class = "nodec" href = "http://www.deitel.com">
+                Grocery store</a>
+
+        <!--function that make able to go back-->
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+
+    
+    </body>
+</html>

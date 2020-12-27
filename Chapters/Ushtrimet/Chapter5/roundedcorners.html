@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.2: roundedcorners.html -->
+<!-- Using border-radius to add rounded corners to two elements. -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rounded Corners</title>
+        <style type = "text/css">
+            div {
+                border: 3px solid navy;
+                padding: 5px 20px;
+                background: lightcyan;
+                width: 200px;
+                text-align: center;
+                border-radius: 15px; /* adding rounded corners */
+                margin-bottom: 20px;
+            }
+            #round2 {
+                border: 3px solid navy;
+                padding: 5px 20px;
+                background: lightcyan;
+                width: 200px;
+                text-align: center;
+                border-radius: 50px; /* increasing border-radius */
+            }
+        </style>
+    </head>
+    <body>
+        <!--Go back Button-->
+    <button onclick="goBack()">Go Back</button>
+            
+        <div>The border-radius property adds rounded corners
+            to an element.
+        </div>
+        <div id="round2">Increasing the border-radius rounds the corners
+            of the element more.
+        </div>
+
+        <!--function that make able to go back-->
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+
+    
+    </body>
+</html>
