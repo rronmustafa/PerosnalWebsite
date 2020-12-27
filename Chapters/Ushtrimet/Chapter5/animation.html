@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.11: animation.html -->
+<!-- Animation in CSS3. -->
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Animation</title>
+		<style type = "text/css">
+			img
+			{
+				position: relative;
+				-webkit-animation: movingImage linear 10s 1s 2 alternate;
+				-moz-animation: movinglmage linear 10s 1s 2 alternate;
+				animation: movingImage linear 10s 2 1s alternate;
+			}
+			@-webkit-keyframes movingImage
+			{
+				0%   {opacity: 0; left: 50px; top: 0px;}
+				25%  {opacity: 1; left: 0px; top:5 0px;}
+				50%  {opacity: 0; left: 50px; top: 100px;}
+				75%  {opacity: 1; left: 100px; top: 50px;}
+				100% {opacity: 0; left: 50px; top: 0px;}
+			}
+			@-moz-keyframes movingImage
+			{
+				0%   {opacity: 0; left: 50px; top: 0px;}
+				25%  {opacity: 1; left: 0px; top:5 0px;}
+				50%  {opacity: 0; left: 50px; top: 100px;}
+				75%  {opacity: 1; left: 100px; top: 50px;}
+				100% {opacity: 0; left: 50px; top: 0px;}
+			}
+			@keyframes movingImage
+			{
+				0%   {opacity: 0; left: 50px; top: 0px;}
+				25%  {opacity: 1; left: 0px; top: 50px;}
+				50%  {opacity: 0; left: 50px; top: 100px;}
+				75%  {opacity: 1; left: 100px; top: 50px;}
+				100% {opacity: 0; left: 50px; top: 0px;}
+			}
+		</style>
+	</head>
+	<body>
+        <!--Go back Button-->
+    <button onclick="goBack()">Go Back</button>
+            
+		<img src = "jhtp9.jfif" width = "138" height = "180"
+			alt = "Java How to Program book cover">
+		<div></div>
+
+        <!--function that make able to go back-->
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+
+    
+	</body>
+</html>

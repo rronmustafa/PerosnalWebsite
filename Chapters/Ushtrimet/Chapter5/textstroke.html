@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.7: textsroke.html -->
+<!-- Text stroke in CSS3. -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Text Stroke</title>
+        <style type = "text/css">
+            h1 {
+                color: lightcyan;
+                -webkit-text-stroke: 2px black; /* vendor prefix */
+                font-size: 500%;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Go back Button-->
+    <button onclick="goBack()">Go Back</button>
+            
+        <h1>Text Stroke</h1>
+
+        <!--function that make able to go back-->
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+
+    
+    </body>
+</html>

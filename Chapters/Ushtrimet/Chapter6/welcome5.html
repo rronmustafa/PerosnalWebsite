@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!-- Fig. 6.14: welcome5.html -->
+<!-- Using equality and relational operators. -->
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Using Relational Operators</title>
+		<script type = "text/javascript">
+			
+			var name; // string entered by the user
+			var now = new Date(); // current date and time
+			var hour = now.getHours(); // current hour (0-23)
+
+			// read the name from the prompt box as a string
+			name = window.prompt( "Please enter your name" );
+
+			// determine whether it’s morning
+			if ( hour < 12 )
+			document.write( "<h1>Good Morning, " );
+
+			// determine whether the time is PM
+			if ( hour >= 12 )
+			{
+			// convert to a 12-hour clock
+			hour = hour - 12;
+
+				// determine whether it 1s before 6 PM
+				if ( hour < 6 )
+					document.write( "<h1>Good Afternoon, " );
+
+				// determine whether it is after 6 PM
+				if ( hour >= 6 )
+					document.write( "<h1>Good Evening, " );
+			} // end if
+
+			document.writeln( name +
+				", welcome to JavaScript programming!</hl>" );
+			
+		</script>
+	</head>
+	<body>
+        <!--Go back Button-->
+    <button onclick="goBack()" style="float: left">Go Back</button>
+		
+
+        <!--function that make able to go back-->
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+	</body>
+</html>
