@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+
+<!-- Fig. 9.5: RollDice.html --> 
+<!-- Random dice image generation using Math.random. --> 
+<html> 
+    <head> 
+        <meta charset = "utf-8"> 
+        <title>Random Dice Images</title> 
+        <style type="text/css"> 
+            li { display: inline; margin-right: 10px; } 
+            ul { margin: 0; } 
+        </style> 
+        <script> 
+            // variables used to interact with the i mg elements 
+            var dielImage; 
+            var die2Image; 
+            var die3Image; 
+            var die4Image;
+            
+            // register button listener and get the img elements 
+            function start() 
+            { 
+                var button = document.getElementById( "rollButton" ); 
+                button.addEventListener( "click", rollDice, false ); 
+                dielImage = document.getElementById( "diel" ); 
+                die2Image = document.getElementById( "die2" ); 
+                die3Image = document.getElementById( "die3" ); 
+                die4Image = document.getElementById( "die4" ); 
+            } // end function rollDice 
+            // roll the dice 
+            function rollDice() 
+            { 
+                setImage( dielImage ); 
+                setImage( die2Image ); 
+                setImage ( die3Image ); 
+                setImage ( die4Image ); 
+            } // end function rollDice
+            
+            // set image source for a die 
+            function setImage( dieImg ) 
+            { 
+                var dieValue = Math.floor( 1 + Math.random () * 6 ); 
+                dieImg.setAttribute( "src", "die" + dieValue + ".png" ); 
+                dieImg.setAttribute( "alt", "die image with " + dieValue + " spot(s)" ); 
+            } // end function setImage 
+            window.addEventListener( "load", start, false ); 
+        </script> 
+    </head>
+    <body> 
+        <button onclick="goBack()">Go Back</button>
+                <h1>Chapter9 HomeWorks  </h1>
+                
+        <form action = "#"> 
+            <input id = "rollButton" type = "button" value = "Roll Dice"> 
+        </form> 
+        <ol> 
+            <li><img id = "diel" src = "blank.png" alt = "die 1 image"></li> 
+            <li><img id = "die2" src = "blank.png" alt = "die 2 image"></li> 
+            <li><img id = "die3" src = "blank.png" alt = "die 3 image"></li> 
+            <li><img id = "die4" src = "blank.png" alt = "die 4 image"></li> 
+        </ol> 
+        
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+
+    </body> 
+</html>

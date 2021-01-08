@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+
+<!-- Fig. 9.3: maximum.html --> 
+<!-- Programmer-Defined maximum function. --> 
+<html> 
+    <head> 
+        <meta charset = "utf-8"> 
+        <title>Maximum of Three Values</title> 
+        <style type = "text/css"> 
+            p { margin: 0; } 
+        </style> 
+        <script> 
+            var inputl = window.prompt( "Enter first number", "0"); 
+            var input2 = window.prompt( "Enter second number", "0" ); 
+            var input3 = window.prompt( "Enter third number", "0" ); 
+            var valuel = parseFloat( inputl ); 
+            var value2 = parseFloat( input2 ); 
+            var value3 = parseFloat( input3 ); 
+            var maxValue = maximum( valuel, value2, value3 );
+            document.writeln( "<p>First number: " + valuel + "</p>" +  
+            "<p>Second number: " + value2 + "</p>" + 
+            "<p>Third number: " + value3 + "</p>" + 
+            "<p>Maximum is: " + maxValue + "</p>" );
+            
+            // maximum function definition (called from line 22) 
+            function maximum( x, y, z ) 
+            {
+                return Math.max( x, Math.max( y, z ) ); 
+            } // end function maximum 
+        </script> 
+    </head>
+    <body>
+        
+    <button onclick="goBack()">Go Back</button>
+    <h1>Chapter9 HomeWorks  </h1>
+    
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+
+    </body> 
+</html>

@@ -499,25 +499,33 @@ footer span a:hover{
 
 .nav li:hover > .dropdown li:nth-child(2){
     animation: animate 300ms ease-in-out forwards;
-    animation-delay: 0;
+    animation-delay: -50ms;
 }
 
 .nav li:hover > .dropdown li:nth-child(3){
     animation: animate 300ms ease-in-out forwards;
-    animation-delay: 150ms;
+    animation-delay: 50ms;
 }
 
 .nav li:hover > .dropdown li:nth-child(4){
     animation: animate 300ms ease-in-out forwards;
-    animation-delay: 300ms;
+    animation-delay: 150ms;
 }
 
 .nav li:hover > .dropdown li:nth-child(5){
     animation: animate 300ms ease-in-out forwards;
-    animation-delay: 450ms;
+    animation-delay: 250ms;
 }.nav li:hover > .dropdown li:nth-child(6){
     animation: animate 300ms ease-in-out forwards;
+    animation-delay: 350ms;
+
+}.nav li:hover > .dropdown li:nth-child(7){
+    animation: animate 300ms ease-in-out forwards;
     animation-delay: 450ms;
+
+}.nav li:hover > .dropdown li:nth-child(8){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 550ms;
 
 }
 

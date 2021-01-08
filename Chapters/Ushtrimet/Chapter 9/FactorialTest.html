@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+
+<!-- Fig. 9.12: FactorialTest.html --> 
+<!-- Factorial calculation with a recursive function. --> 
+<html> 
+    <head> 
+        <meta charset = "utf-8"> 
+        <title>Recursive Factorial Function</title> 
+        <style type = "text/css"> 
+           p { margin: 0px; } 
+        </style> 
+        <script> 
+            var output = ""; // stores the output 
+            
+            // calculates factorials of 0 - 10 
+            function calculateFactorials() 
+            { 
+                for ( var i = 0; i <= 10; ++i ) 
+                    output += "<p>" + i + "! = " + factorial( i) + "</p>"; 
+                    
+                    document.getElementById( "results" ).innerHTML = output; 
+            } // end function calculateFactorials
+            
+            // Recursive definition of function factorial 
+            function factorial( number ) 
+            { 
+                if ( number < 1) // base case 
+                    return 1; 
+                    else 
+                        return number * factorial( number - 1); 
+            }// end function factorial 
+            
+            window.addEventListener( "load", calculateFactorials, false ); 
+        </script> 
+    </head> 
+    <body> 
+        
+    <button onclick="goBack()">Go Back</button>
+    <h1>Chapter9 HomeWorks  </h1>
+    
+        <hl>Factorials of 0 to 10</hl> 
+        <div id = "results"></div> 
+        
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+
+    </body> 
+</html>

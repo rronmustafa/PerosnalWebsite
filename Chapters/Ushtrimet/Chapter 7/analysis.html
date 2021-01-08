@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!-- Fig. 7.7: analysis.html-->
+<!-- Examination-results calculation.-->
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Analysis of Examnation Results</title>
+		<script>
+
+			// initializing variables in declrations
+			var passes= 0; // number of passes
+			var failures= 0;// number of failures
+			var student= 1; // student counter 
+			var result; // an exam result
+
+			// prodess 10 stundents ; counter-controllerd loop
+			while (student <= 10 )
+			{
+				result = window.prompt("Enter result (1=pass,2=fail)", "0" );
+
+				if ( result == "1")
+					passes = passes + 1;
+				else
+					failures = failures + 1;
+
+				student =student + 1;
+			}// end while
+
+			//termination phase
+			document.writeln("<h1>Examnation Results</h1>" );
+			document.writeln( "<p>Passed: " + passes +
+				"; Failed: " + failures + "</p>" );
+
+			if (passes >8 )
+				document.writeln( "<p>Bonus to instructor!</p>" );
+		</script>	
+	</head>
+	<body>
+		     <!--Go back Button-->
+			 <button onclick="goBack()">Go Back</button>
+			 <h1>Chapter7 HomeWorks </h1>
+		
+		    <!-- The Go Back Button-->
+			<script>
+				function goBack() {
+				window.history.back();
+				}
+			</script>
+	</body>
+</html>

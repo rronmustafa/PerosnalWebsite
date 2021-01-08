@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+
+<!-- Fig. 8.1: WhileCounter.html -->
+<!-- Counter-controlled repetition. --> <html> 
+    <head> 
+         <meta charset = "utf-8"> 
+         <title>Counter-Controlled Repetition</title> 
+         <script> 
+        
+            var counter = 1; 
+            // initialization 
+            
+            while ( counter <= 7 ) // repetition condition
+            { document.writeln( "<p style = 'font-size: " + counter + "ex'>HTML5 font size " + counter + "ex</p>" ); ++counter; 
+            // increment 
+            } //end while 
+            
+         </script> 
+    </head>
+    <body>
+        <button onclick="goBack()">Go Back</button>
+            <h1>Chapter8 HomeWorks  </h1>
+            
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+
+    </body> 
+</html>
